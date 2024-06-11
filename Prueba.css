@@ -1,9 +1,16 @@
 .fondo{
 
-    background-color: rgb(89, 104, 170);
+    background-color: rgb(155, 71, 71);
 
 }
 
+
+
+.fondo_oscuro{
+
+    background-color: rgb(8, 2, 2);
+
+}
 
 
 .titulo{
@@ -12,7 +19,21 @@
     color:aliceblue;
     font-family: 'Lucida Sans Regular';
     margin:auto;
-    font-size: xx-large;
+    font-size:43px;
+    padding: 60px;
+    width:60%;height:30%;
+
+}
+
+
+
+.titulo_oscuro{
+
+    text-align: center;
+    color:rgb(255, 255, 255);
+    font-family: 'Lucida Sans Regular';
+    margin:auto;
+    font-size:43px;
     padding: 60px;
     width:60%;height:30%;
 
@@ -22,11 +43,25 @@
 
 
 
-.misionvision{
+
+.titulo_parrafo{
 
     text-align: center;
     color:aliceblue;
-    background-color: rgba(34, 48, 110, 0.479);
+    background-color: rgb(102, 37, 42);
+    font-family: 'Lucida Sans Regular';
+    font-size:x-large;
+    padding: 36px;
+
+
+}
+
+
+.misionvision_oscuro{
+
+    text-align: center;
+    color:aliceblue;
+    background-color: rgb(20, 6, 8);
     font-family: 'Lucida Sans Regular';
     font-size:x-large;
     padding: 36px;
