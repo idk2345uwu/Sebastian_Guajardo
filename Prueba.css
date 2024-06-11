@@ -1,0 +1,86 @@
+.fondo{
+
+    background-color: rgb(89, 104, 170);
+
+}
+
+
+
+.titulo{
+
+    text-align: center;
+    color:aliceblue;
+    font-family: 'Lucida Sans Regular';
+    margin:auto;
+    font-size: xx-large;
+    padding: 60px;
+    width:60%;height:30%;
+
+}
+
+
+
+
+
+.misionvision{
+
+    text-align: center;
+    color:aliceblue;
+    background-color: rgba(34, 48, 110, 0.479);
+    font-family: 'Lucida Sans Regular';
+    font-size:x-large;
+    padding: 36px;
+
+
+}
+
+
+.parrafos{
+
+    text-align: center;
+    color:aliceblue;
+    padding: 12px;
+    font-family: 'Lucida Sans Regular';
+    font-size:large
+
+}
+
+
+.parrafos2{
+
+    text-align: center;
+    color:aliceblue;
+    padding: 16px;
+    font-family: 'Lucida Sans Regular';
+    font-size: 300%;
+
+}
+
+
+
+
+.parrafos_idols{
+
+    text-align: center;
+    color:aliceblue;
+    padding: 36px;
+    font-family: 'Lucida Sans Regular';
+    font-size:large;
+    background-color: rgba(34, 48, 110, 0.479);
+
+}
+
+
+
+
+.parrafo_formulario{
+
+    text-align: center;
+    color:aliceblue;
+
+    font-family: 'Lucida Sans Regular';
+    font-size:medium;
+    padding: 36px;
+
+
+}
