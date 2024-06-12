@@ -60,7 +60,7 @@
         <label for="particular">
             <h3>
                 
-                Completar Registro como particular o empresa?:
+                Completar Registro como Particular o Empresa?:
                 
             </h3>
         </label>
@@ -94,6 +94,7 @@
                     <th>Correo</th>
                     <th>Edad</th>
                     <th>Fecha Nacimiento</th>
+                    <th>Particular o Empresa</th>
                 </tr>
             </thead>
             <tbody id="cuerpoTabla">
@@ -110,6 +111,29 @@
         <input type="text" id="UPDrut" placeholder="Rut...">
         <input type="email" id="UPDcorreo" placeholder="Correo...">
         <input type="date" id="UPDfechanacimiento" placeholder="Fecha de nacimiento">
+        <label for="particular">
+            <h3>
+                
+                Completar Actualizacion como Particular o Empresa?:
+                
+            </h3>
+        </label>
+        <select class="formulario" name="particular" id="UPDparticular">
+            <option value="particular">Particular</option>
+            <option value="empresa">Empresa</option>
+        </select>
+        
+        <label for="evento"> 
+            <h3>
+                Contacto para Eventos? (Marque Casilla para Si)
+            </h3>
+            
+        </label>
+        
+
+        <input type="checkbox" id="UPDevento" name="evento" value="evento">
+
+        <br>
         <button id="btnActualizar">Actualizar</button>
     </div>
     

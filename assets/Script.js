@@ -28,7 +28,9 @@ const registrar = ()=>{
     let vCorreo = eCorreo.value
     let eFecha = document.getElementById("fechanacimiento");
     let vFecha = eFecha.value
-    let objeto = {nombre:vNombre,apellido:vApellido,edad:vEdad,rut:vRut,correo:vCorreo,fechanacimiento:vFecha};
+    let eParticular = document.getElementById("particular");
+    let vParticular = eParticular.value
+    let objeto = {nombre:vNombre,apellido:vApellido,edad:vEdad,rut:vRut,correo:vCorreo,fechanacimiento:vFecha,particular:vParticular};
 
     // console.log(objeto);
 
@@ -56,6 +58,7 @@ const cargarDatos = ()=>{
             estructura += "<td>"+p.correo+"</td>"
             estructura += "<td>"+p.edad+"</td>"
             estructura += "<td>"+p.fechanacimiento+"</td>"
+            estructura += "<td>"+p.particular+"</td>"
             estructura += "<td><button id='UPD"+p.id+"'>Actualizar</button></td>";
             estructura += "<td><button id='DEL"+p.id+"'>Eliminar</button></td>";
             estructura += "</tr>";
@@ -71,6 +74,7 @@ const cargarDatos = ()=>{
                 document.getElementById("UPDcorreo").value = p.correo;
                 document.getElementById("UPDedad").value = p.edad;
                 document.getElementById("UPDfechanacimiento").value = p.fechanacimiento;
+                document.getElementById("UPDparticular").value = p.particular;
                 document.getElementById("btnActualizar").value = p.id;
                 //el boton tendra el id del objeto
             });
@@ -102,13 +106,15 @@ const actualizar = ()=>{
     let eRut = document.getElementById("UPDrut");
     let eCorreo = document.getElementById("UPDcorreo");
     let eFecha = document.getElementById("UPDfechanacimiento");
+    let eParticular = document.getElementById("UPDparticular");
     let vNombre = eNombre.value
     let vApellido = eApellido.value
     let vEdad = eEdad.value
     let vRut = eRut.value
     let vCorreo = eCorreo.value
     let vFecha = eFecha.value
-    let objeto = {nombre:vNombre,apellido:vApellido,edad:vEdad,rut:vRut,correo:vCorreo,fechanacimiento:vFecha};
+    let vParticular = eParticular.value
+    let objeto = {nombre:vNombre,apellido:vApellido,edad:vEdad,rut:vRut,correo:vCorreo,fechanacimiento:vFecha,particular:vParticular};
 
     let id = document.getElementById("btnActualizar").value;
     //Envío el objeto y el id a las promesas
