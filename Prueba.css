@@ -60,3 +60,48 @@
     justify-content: center; 
     align-items: center; 
 }
+
+
+
+.fondo {
+    background-color: rgb(245, 124, 140);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario, .tablas {
+    width: 43%; 
+    margin: 20px 0;
+    background-color: rgba(200, 102, 115, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.formulario h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.formulario input, .formulario button {
+    width: 30%; 
+    padding: 10px;
+    margin: 10px 5%;
+    box-sizing: border-box;
+}
+
+.tablas table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tablas th, .tablas td {
+    padding: 12px;
+    border: 1px solid #a77c7c;
+    text-align: left;
+}
+
+.tablas th {
+    background-color: rgb(197, 107, 119);
+}
