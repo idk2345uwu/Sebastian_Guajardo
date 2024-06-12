@@ -51,10 +51,47 @@ body {
     text-align: center;
     color:aliceblue;
     padding: 12px;
-    font-family: 'Lucida Sans Regular';
-    font-size:large
+    font-family: 'Trebuchet Ms';
+    font-size:large;
+    max-width: 73%;
+    margin: 0 auto;
+    
 
 }
+
+.parrafos_grande{
+
+    text-align: center;
+    color:aliceblue;
+    padding: 12px;
+    font-family: 'Trebuchet Ms';
+    font: size xx-large;
+    max-width: 73%;
+    margin: 0 auto;
+
+}
+
+
+
+
+
+
+
+
+
+.parrafos_medio{
+
+    text-align: center;
+    color:aliceblue;
+    padding: 12px;
+    font-family: 'Lucida Sans Regular';
+    font-size:medium;
+    
+
+}
+
+
+
 
 
 

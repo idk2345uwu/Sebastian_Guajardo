@@ -13,6 +13,14 @@ document.getElementById('modo_oscuro').addEventListener('click', function() {
 });
 
 
+document.getElementById('fuente_grande').addEventListener('click', function() {
+    
+    
+    document.body.classList.toggle('parrafos_grande');
+
+});
+
+
 
 const registrar = ()=>{
     //Recupero elemento
@@ -30,7 +38,9 @@ const registrar = ()=>{
     let vFecha = eFecha.value
     let eParticular = document.getElementById("particular");
     let vParticular = eParticular.value
-    let objeto = {nombre:vNombre,apellido:vApellido,edad:vEdad,rut:vRut,correo:vCorreo,fechanacimiento:vFecha,particular:vParticular};
+    let eEvento = document.getElementById("evento");
+    let vEvento = eEvento.value
+    let objeto = {nombre:vNombre,apellido:vApellido,edad:vEdad,rut:vRut,correo:vCorreo,fechanacimiento:vFecha,particular:vParticular,evento:vEvento};
 
     // console.log(objeto);
 
@@ -59,6 +69,7 @@ const cargarDatos = ()=>{
             estructura += "<td>"+p.edad+"</td>"
             estructura += "<td>"+p.fechanacimiento+"</td>"
             estructura += "<td>"+p.particular+"</td>"
+            estructura += "<td>"+p.evento+"</td>"
             estructura += "<td><button id='UPD"+p.id+"'>Actualizar</button></td>";
             estructura += "<td><button id='DEL"+p.id+"'>Eliminar</button></td>";
             estructura += "</tr>";
@@ -75,6 +86,7 @@ const cargarDatos = ()=>{
                 document.getElementById("UPDedad").value = p.edad;
                 document.getElementById("UPDfechanacimiento").value = p.fechanacimiento;
                 document.getElementById("UPDparticular").value = p.particular;
+                document.getElementById("UPDevento").value = p.evento;
                 document.getElementById("btnActualizar").value = p.id;
                 //el boton tendra el id del objeto
             });
@@ -107,6 +119,7 @@ const actualizar = ()=>{
     let eCorreo = document.getElementById("UPDcorreo");
     let eFecha = document.getElementById("UPDfechanacimiento");
     let eParticular = document.getElementById("UPDparticular");
+    let eEvento = document.getElementById("evento");
     let vNombre = eNombre.value
     let vApellido = eApellido.value
     let vEdad = eEdad.value
@@ -114,7 +127,8 @@ const actualizar = ()=>{
     let vCorreo = eCorreo.value
     let vFecha = eFecha.value
     let vParticular = eParticular.value
-    let objeto = {nombre:vNombre,apellido:vApellido,edad:vEdad,rut:vRut,correo:vCorreo,fechanacimiento:vFecha,particular:vParticular};
+    let vEvento = eEvento.value
+    let objeto = {nombre:vNombre,apellido:vApellido,edad:vEdad,rut:vRut,correo:vCorreo,fechanacimiento:vFecha,particular:vParticular,evento:vEvento};
 
     let id = document.getElementById("btnActualizar").value;
     //Envío el objeto y el id a las promesas
