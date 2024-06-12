@@ -6,6 +6,14 @@ addEventListener("load",()=>{
     document.getElementById("btnActualizar").addEventListener("click", actualizar);
 })
 
+document.getElementById('modo_oscuro').addEventListener('click', function() {
+    
+    document.body.classList.toggle('fondo_oscuro');
+
+});
+
+
+
 const registrar = ()=>{
     //Recupero elemento
     let eNombre = document.getElementById("nombre");

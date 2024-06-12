@@ -1,10 +1,24 @@
 .fondo{
 
     background-color: rgb(245, 124, 140);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.fondo_oscuro{
+
+    background-color: rgb(4, 2, 2);
+
 
 }
 
 
+
+body {
+    transition: background-color 0.3s;
+}
 
 .titulo {
     text-align: center;
@@ -23,7 +37,13 @@
 }
 
 
+.imagen_modo_oscuro{
 
+
+    max-width: 100%;
+    height:19px
+    
+}
 
 
 .parrafos{
@@ -63,12 +83,6 @@
 
 
 
-.fondo {
-    background-color: rgb(245, 124, 140);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 .formulario, .tablas {
     width: 43%; 
