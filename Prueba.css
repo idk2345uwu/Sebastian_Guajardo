@@ -1,107 +1,29 @@
-
-
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Lucida Sans Regular';
-}
-
 .fondo{
 
-    background-color: rgb(155, 71, 71);
+    background-color: rgb(245, 124, 140);
 
 }
 
-.mitad_blanca {
-    display: flex;
-    justify-content: space-between;
-    background-color: rgb(132, 132, 132);
-    padding: 0px;
+
+
+.titulo {
+    text-align: center;
+    margin: auto;
+    padding: 30px;
+    max-width: 100%;
+    height: auto;
+    animation: move 3.6s infinite ease-in-out alternate;
 }
 
-.izquierda, .derecha {
-    width: 48%;
-    padding: 20px;
-}
 
 
-
-
-
-.mitad_roja {
-    background-color: rgb(155, 71, 71);
-    padding: 0px;
-}
-
-.imagen_aespa {
-    max-width: 100px;
+.titulo img {
+    max-width: 30%;
     height: auto;
 }
 
 
 
-.fondo_oscuro{
-
-    background-color: rgb(8, 2, 2);
-
-}
-
-
-.titulo{
-
-    text-align: center;
-    color:aliceblue;
-    font-family: 'Lucida Sans Regular';
-    margin:auto;
-    font-size:43px;
-    padding: 60px;
-    width:60%;height:30%;
-
-}
-
-
-
-.titulo_oscuro{
-
-    text-align: center;
-    color:rgb(255, 255, 255);
-    font-family: 'Lucida Sans Regular';
-    margin:auto;
-    font-size:43px;
-    padding: 60px;
-    width:60%;height:30%;
-
-}
-
-
-
-
-
-
-.titulo_parrafo{
-
-    text-align: center;
-    color:aliceblue;
-    
-    font-family: 'Lucida Sans Regular';
-    font-size:x-large;
-    padding: 36px;
-
-
-}
-
-
-.misionvision_oscuro{
-
-    text-align: center;
-    color:aliceblue;
-    background-color: rgb(20, 6, 8);
-    font-family: 'Lucida Sans Regular';
-    font-size:x-large;
-    padding: 36px;
-
-
-}
 
 
 .parrafos{
@@ -115,41 +37,26 @@ body {
 }
 
 
-.parrafos2{
 
-    text-align: center;
-    color:aliceblue;
-    padding: 16px;
-    font-family: 'Lucida Sans Regular';
-    font-size: 300%;
+@keyframes move{
+
+
+    from{
+        transform: translateY(0px)
+    }
+
+    to{
+        transform: translateY(-19px)
+    }
+
 
 }
+        
 
-
-
-
-.parrafos_idols{
-
-    text-align: center;
-    color:aliceblue;
-    padding: 36px;
-    font-family: 'Lucida Sans Regular';
-    font-size:large;
-    background-color: rgba(34, 48, 110, 0.479);
-
-}
-
-
-
-
-.parrafo_formulario{
-
-    text-align: center;
-    color:aliceblue;
-
-    font-family: 'Lucida Sans Regular';
-    font-size:medium;
-    padding: 36px;
-
-
+.mitad_pagina {
+    width: 100%;
+    background-color: rgb(200, 102, 115);; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
 }
