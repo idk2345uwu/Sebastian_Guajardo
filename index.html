@@ -49,13 +49,38 @@
 
 
     <div class="formulario">
-        <h1>Registro</h1>
+        <h1>Ingrese sus Datos de Contacto</h1>
         <input type="text" id="nombre" placeholder="Nombre...">
         <input type="text" id="apellido" placeholder="Apellido...">
         <input type="number" id="edad" placeholder="Edad">
         <input type="text" id="rut" placeholder="Rut...">
         <input type="email" id="correo" placeholder="Correo...">
         <input type="date" id="fechanacimiento" placeholder="Fecha de nacimiento">
+
+        <label for="particular">
+            <h3>
+                
+                Completar Registro como particular o empresa?:
+                
+            </h3>
+        </label>
+        <select class="formulario" name="particular" id="particular">
+            <option value="particular">Particular</option>
+            <option value="empresa">Empresa</option>
+        </select>
+        
+        <label for="evento"> 
+            <h3>
+                Este es un Contacto para Eventos?
+            </h3>
+            
+        </label>
+        
+
+        <input type="checkbox" id="evento" name="evento" value="evento">
+
+        <br>
+        
         <button id="btnRegistrar">Registrar</button>
     </div>
 
