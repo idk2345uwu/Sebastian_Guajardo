@@ -1,7 +1,30 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans Regular';
+}
+
 .fondo{
 
     background-color: rgb(155, 71, 71);
 
+}
+
+.mitad_blanca {
+    background-color: white;
+    padding: 0px;
+}
+
+.mitad_roja {
+    background-color: rgb(155, 71, 71);
+    padding: 0px;
+}
+
+.imagen_aespa {
+    max-width: 100px;
+    height: auto;
 }
 
 
@@ -48,7 +71,7 @@
 
     text-align: center;
     color:aliceblue;
-    background-color: rgb(102, 37, 42);
+    
     font-family: 'Lucida Sans Regular';
     font-size:x-large;
     padding: 36px;
