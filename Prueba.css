@@ -13,9 +13,20 @@ body {
 }
 
 .mitad_blanca {
-    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(132, 132, 132);
     padding: 0px;
 }
+
+.izquierda, .derecha {
+    width: 48%;
+    padding: 20px;
+}
+
+
+
+
 
 .mitad_roja {
     background-color: rgb(155, 71, 71);
