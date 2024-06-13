@@ -23,6 +23,11 @@ document.getElementById('fuente_grande').addEventListener('click', function() {
 
 
 const registrar = ()=>{
+    validarVacio("nombre");
+    validarVacio("apellido");
+    validarVacio("edad");
+    validarVacio("rut");
+    validarVacio("correo");
     //Recupero elemento
     let eNombre = document.getElementById("nombre");
     let vNombre = eNombre.value
@@ -40,6 +45,42 @@ const registrar = ()=>{
     let vParticular = eParticular.value
     let eEvento = document.getElementById("evento");
     let vEvento = eEvento.value
+
+
+    if (vNombre.trim() === "") {
+    
+     return; 
+
+    }
+
+
+    if (vApellido.trim() === "") {
+    
+     return; 
+
+    }
+
+    
+    if (vEdad.trim() === "") {
+    
+        return; 
+   
+    }
+
+    
+    if (vRut.trim() === "") {
+    
+        return; 
+   
+    }
+
+    
+    if (vCorreo.trim() === "") {
+    
+        return; 
+   
+    }
+
     let objeto = {nombre:vNombre,apellido:vApellido,edad:vEdad,rut:vRut,correo:vCorreo,fechanacimiento:vFecha,particular:vParticular,evento:vEvento};
 
     // console.log(objeto);
@@ -146,4 +187,38 @@ const actualizar = ()=>{
         document.getElementById("btnActualizar").disabled = "";
         //finally para que se active el boton aunque falle la promesa
     })
+}
+
+
+
+
+
+
+function validar(){
+    validarVacio("nombre");
+    validarVacio("apellido");
+    validarVacio("edad");
+    validarVacio("rut");
+    validarVacio("correo");
+
+}
+
+
+function validarVacio(idCampo){
+    //REcupera el elemento
+    let elemento = document.getElementById(idCampo);
+    console.log(elemento);
+    //Recuperar valor del campo
+    let valor = elemento.value;
+    console.log(valor);
+    let eParrafo = document.getElementById("p"+idCampo);
+    if(valor.trim()==""){
+        console.log("No hay nada")
+        elemento.style.borderColor = "red";
+        eParrafo.style.display = "block";
+    }else{
+        console.log("algo Hay")
+        elemento.style.borderColor = "green";
+        eParrafo.style.display = "none";
+    }
 }

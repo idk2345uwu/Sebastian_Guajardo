@@ -58,10 +58,20 @@
     <div class="formulario">
         <h1>Ingrese sus Datos de Contacto</h1>
         <input type="text" id="nombre" placeholder="Nombre...">
+        <p class="noDisplay" id="pnombre">Debes ingresar un Nombre</p>
+
         <input type="text" id="apellido" placeholder="Apellido...">
+        <p class="noDisplay" id="papellido">Debes ingresar un apellido</p>
+
         <input type="number" id="edad" placeholder="Edad">
+        <p class="noDisplay" id="pedad">Debes ingresar una Edad</p>
+
         <input type="text" id="rut" placeholder="Rut...">
+        <p class="noDisplay" id="prut">Debes ingresar un Rut</p>
+
         <input type="email" id="correo" placeholder="Correo...">
+        <p class="noDisplay" id="pcorreo">Debes ingresar un Correo</p>
+
         <input type="date" id="fechanacimiento" placeholder="Fecha de nacimiento">
 
         <label for="particular">
@@ -88,7 +98,7 @@
 
         <br>
         
-        <button id="btnRegistrar">Registrar</button>
+        <button id="btnRegistrar" onclick="validar()">Registrar</button>
     </div>
 
     <div class="tablas">
