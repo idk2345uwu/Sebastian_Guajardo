@@ -9,6 +9,10 @@ addEventListener("load",()=>{
 document.getElementById('modo_oscuro').addEventListener('click', function() {
     
     document.body.classList.toggle('fondo_oscuro');
+    //remplaza las clases, en este caso son dos clases para el fondo, el toggle lo que hace es que cambia la clase que ya esta
+    //por la clase fondo oscuro
+
+
 
 });
 
@@ -18,6 +22,8 @@ document.getElementById('fuente_grande').addEventListener('click', function() {
     
     document.body.classList.toggle('parrafos_grande');
 
+
+    //lo mismo de arriba, pero con un parrafo
 });
 
 
@@ -28,7 +34,8 @@ const registrar = ()=>{
     validarVacio("edad");
     validarVacio("rut");
     validarVacio("correo");
-    //Recupero elemento
+    //se aplican funciones de validar que no esten vacios los campos, al final del codigo estan las funciones validacion
+    //Recupera elementos
     let eNombre = document.getElementById("nombre");
     let vNombre = eNombre.value
     let eApellido = document.getElementById("apellido");
@@ -81,6 +88,10 @@ const registrar = ()=>{
    
     }
 
+    //en los if superiores se valida que no esten vacias las funciones, si estan vacias, se corta ahi en los return
+
+
+    //en caso de que no se haya parado en los return, se registrar el objeto
     let objeto = {nombre:vNombre,apellido:vApellido,edad:vEdad,rut:vRut,correo:vCorreo,fechanacimiento:vFecha,particular:vParticular,evento:vEvento};
 
     // console.log(objeto);
@@ -193,7 +204,7 @@ const actualizar = ()=>{
 
 
 
-
+//en esta funcion se llaman a las funciones validar vacio para cada uno de los campos a su derecha, "id"
 function validar(){
     validarVacio("nombre");
     validarVacio("apellido");
@@ -206,17 +217,17 @@ function validar(){
 
 function validarVacio(idCampo){
     //REcupera el elemento
-    let elemento = document.getElementById(idCampo);
+    let elemento = document.getElementById(idCampo); //recupera el elemento
     console.log(elemento);
     //Recuperar valor del campo
-    let valor = elemento.value;
+    let valor = elemento.value; //recupera el valor del campo
     console.log(valor);
-    let eParrafo = document.getElementById("p"+idCampo);
-    if(valor.trim()==""){
+    let eParrafo = document.getElementById("p"+idCampo); //recupera el parafo que esta en no display
+    if(valor.trim()==""){ //si el campo esta vacio aca, muestra abajo el parrafo que estaba con el no display y un borde rojo usando el display block de estilo
         console.log("No hay nada")
         elemento.style.borderColor = "red";
         eParrafo.style.display = "block";
-    }else{
+    }else{ //si el campo esta con contenido, no se muestra la advertencia, cambia a un borde verde y el display block no es necesario, por ende, none
         console.log("algo Hay")
         elemento.style.borderColor = "green";
         eParrafo.style.display = "none";
